@@ -1,5 +1,6 @@
 :root {
   --color-fondo: #45337c;
+  --color-encabezado:#fcfcfc;
   --color-letra: #f6f6f6;
   --color-resaltar: #e16acb;
   --fondo-boton: #0026ff;
@@ -7,13 +8,19 @@
 
 body {
   font-family: "Raleway", sans-serif;
+  background: no-repeat center/cover;
+  background: var(--color-fondo);
+  background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 47%, rgba(2,0,36,1) 99%);
+  color: var(--color-letra);
 }
 /* HEADER */
 .oculto {
   display: none;
 }
 .encabezado {
-  background-color: var(--color-fondo);
+  background-color: var(--color-encabezado) ;
+  background: linear-gradient(-90deg, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 47%, rgba(2,0,36,1) 99%);
+
   display: flex;
   justify-content: space-around;
   padding: 0.5rem;
@@ -108,7 +115,6 @@ body {
 /* PRODUCTOS */
 .productos {
   width: 100%;
-  height: 110vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -154,11 +160,15 @@ body {
   justify-content: flex-end;
   border: 2px solid black;
   height: 280px;
+  transition: transform 0.4s ease-in-out;
+}
+.card:hover{
+  transform: translateY(-5px);
 }
 .card-img {
   width: 90%;
   height: 50%;
-  background: no-repeat center/cover url("../img/star-wars-figma.png");
+  background: no-repeat center/cover;
   margin-bottom: 1rem;
 }
 .card-titulo {
@@ -176,6 +186,65 @@ body {
   text-decoration: none;
   color: var(--fondo-boton);
 }
+/* AGREGADO DE IMAGENES */
+/* STARWARS */
+.productos__starWars-cards:nth-child(1) > .card-img {
+  background-image: url(../img/star-wars-figma.png);
+}
+.productos__starWars-cards:nth-child(2) > .card-img {
+  background-image: url(../img/star-wars2-figma.png);
+}
+.productos__starWars-cards:nth-child(3) > .card-img {
+  background-image: url(../img/star-wars3-figma.png);
+}
+.productos__starWars-cards:nth-child(4) > .card-img {
+  background-image: url(../img/star-wars4-figma.png);
+}
+.productos__starWars-cards:nth-child(5) > .card-img {
+  background-image: url(../img/star-wars5-figma.png);
+}
+.productos__starWars-cards:nth-child(6) > .card-img {
+  background-image: url(../img/star-wars6-figma.png);
+}
+/* CONSOLAS */
+.productos__consolas-cards:nth-child(1) > .card-img {
+  background-image: url(../img/consola-1.png);
+}
+.productos__consolas-cards:nth-child(2) > .card-img {
+  background-image: url(../img/consola-2.png);
+}
+.productos__consolas-cards:nth-child(3) > .card-img {
+  background-image: url(../img/consola-3.png);
+}
+.productos__consolas-cards:nth-child(4) > .card-img {
+  background-image: url(../img/consola-4.png);
+}
+.productos__consolas-cards:nth-child(5) > .card-img {
+  background-image: url(../img/consola-5.png);
+}
+.productos__consolas-cards:nth-child(6) > .card-img {
+  background-image: url(../img/consola-6.png);
+}
+/* DIVERSOS */
+.productos__diversos-cards:nth-child(1) > .card-img {
+  background-image: url(../img/diversos-1.png);
+}
+.productos__diversos-cards:nth-child(2) > .card-img {
+  background-image: url(../img/diversos-2.png);
+}
+.productos__diversos-cards:nth-child(3) > .card-img {
+  background-image: url(../img/diversos-3.png);
+}
+.productos__diversos-cards:nth-child(4) > .card-img {
+  background-image: url(../img/diversos-4.png);
+}
+.productos__diversos-cards:nth-child(5) > .card-img {
+  background-image: url(../img/diversos-5.png);
+}
+.productos__diversos-cards:nth-child(6) > .card-img {
+  background-image: url(../img/diversos-6.png);
+}
+
 
 @media screen and (max-width: 768px) {
   .buscador {
@@ -198,8 +267,13 @@ body {
   .oculta-card {
     display: none;
   }
+  .productos__starWars,
+  .productos__consolas,
+  .productos__diversos {
+    flex-wrap: wrap;
+  }
   .card {
-    width: calc(25% - 2rem);
+    width: calc(25% - .3125rem);
   }
 }
 @media screen and (max-width: 365px) {
