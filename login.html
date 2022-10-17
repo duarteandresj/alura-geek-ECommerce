@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alura Geek</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- FUENTE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONTAWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ICONO -->
+    <link
+      rel="shortcut icon"
+      href="https://i0.wp.com/eltallerdehector.com/wp-content/uploads/2022/07/hongo-rojo-mario-bros-png.png?resize=800%2C765&ssl=1"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header class="encabezado">
+      <div class="derecha">
+        <img src="./assets/img/Logo.png" alt="Logo de Alura Geeks" />
+        <div class="buscador">
+          <input
+            type="text"
+            id="input-buscar"
+            placeholder="¿Que desea buscar?"
+          />
+          <button class="btn-buscar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </div>
+      <button class="btn-buscar oculto">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </header>
+    <main>
+      <div class="login">
+          <h2 class="login__title">Iniciar sesion
+          </h2>
+          <input type="email" name="login__email" id="email" placeholder="Escriba su correo electrónico">
+          <input type="password" name="login__contraseña" id="password" placeholder="Escriba su contraseña">
+          <button type="submit" class="login__btn banner-textos__btn">Entrar</button>
+      </div>
+<hr>
+      <footer class="footer">
+        <div class="company">
+          <div class="quienes-somos">
+            <img src="./assets/img/Logo.png" alt="Logo de Alura Geeks" />
+            <ul class="quienes-somos__lista">
+              <li class="quienes-somos__lista-item">
+                <a href="#">Quienes somos</a>
+              </li>
+              <li class="quienes-somos__lista-item">
+                <a href="#">Política de privicidad</a>
+              </li>
+              <li class="quienes-somos__lista-item">
+                <a href="#">Programa de fidelidad</a>
+              </li>
+              <li class="quienes-somos__lista-item">
+                <a href="#">Nuestras tiendas</a>
+              </li>
+              <li class="quienes-somos__lista-item">
+                <a href="#">Quiero ser franquiciado</a>
+              </li>
+              <li class="quienes-somos__lista-item">
+                <a href="#">Anuncie aqui</a>
+              </li>
+            </ul>
+          </div>
+          <div class="contacto">
+            <h2>Hable con nosotros</h2>
+            <form action="#" class="form">
+              <label for="form-nombre" class="form__label">Nombre</label>
+              <input type="text" name="form-nombre" id="form-nombre" />
+              <textarea
+                name="mensaje"
+                id="form__textarea"
+                placeholder="Escribe tu mensaje"
+              ></textarea>
+              <button type="submit" class="banner-textos__btn form__btn">
+                Enviar mensaje
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="desarrollador">
+            <h5>Pagina desarrollada por <span>Duarte, Andrés</span></h5>
+            <p>2022</p>
+          <div class="social-network">
+            <a href="https://github.com/duarteandresj" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/andres-duarte-8896b1197/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

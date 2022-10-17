@@ -3,18 +3,25 @@
   --color-letra: #f6f6f6;
   --color-resaltar: #e16acb;
   --fondo-boton: #0026ff;
+  --gradiente-encabezado:linear-gradient(
+    -90deg,
+    rgb(6, 16, 18) 0%,
+    rgba(9, 9, 121, 1) 47%,
+    rgba(2, 0, 36, 1) 99%
+  );
+  --gradiente-cuerpo: linear-gradient(
+    90deg,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(9, 9, 121, 1) 47%,
+    rgba(2, 0, 36, 1) 99%
+  );;
 }
 
 body {
   font-family: "Raleway", sans-serif;
   background: no-repeat center/cover;
   background: var(--color-fondo);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 212, 255, 1) 0%,
-    rgba(9, 9, 121, 1) 47%,
-    rgba(2, 0, 36, 1) 99%
-  );
+  background:var(--gradiente-cuerpo);
   color: var(--color-letra);
 }
 /* HEADER */
@@ -23,13 +30,7 @@ body {
 }
 .encabezado {
   background-color: var(--color-fondo);
-  background: linear-gradient(
-    -90deg,
-    rgb(6, 16, 18) 0%,
-    rgba(9, 9, 121, 1) 47%,
-    rgba(2, 0, 36, 1) 99%
-  );
-
+  background: var(--gradiente-encabezado);
   display: flex;
   justify-content: space-around;
   padding: 0.5rem;
@@ -259,13 +260,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   background-color: var(--color-fondo);
-  background: linear-gradient(
-    30deg,
-    rgb(6, 16, 18) 1%,
-    rgba(0, 212, 255) 25%,
-    rgba(9, 9, 121, 1) 60%,
-    rgb(6, 16, 18) 98%
-  );
+  background:var(--gradiente-cuerpo);
 }
 .company {
   padding: 2rem 0;
