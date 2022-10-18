@@ -1,0 +1,12 @@
+header .btn-menuAdministrador{
+    text-transform: capitalize;
+    font-size: 0.8125rem;
+    padding: 0.5rem;
+}
+.agregar{
+    display: 	flex;
+    min-height: 50vh;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem 25%;
+}
