@@ -53,7 +53,9 @@
     </header>
     <main>
       <div class="agregar">
-        <h2 class="agregar__title">Agregar nuevo producto</h2>
+        <div class="agregar__title">
+          <h2> Agregar nuevo producto</h2>
+        </div>
         <div class="campo-input">
           <label for="url-imagen">URL de imagen</label>
           <input type="url" name="url-imagen" id="url-imagen">
@@ -63,27 +65,18 @@
           <input type="text" name="categoria-prod" id="categoria-prod">
         </div>
         <div class="campo-input">
-          <label for="nombre-prod">Nombre</label>
+          <label for="nombre-prod">Nombre del producto</label>
           <input type="text" name="nombre-prod" id="nombre-prod">
         </div>
         <div class="campo-input">
-          <label for="precio-prod">Precio</label>
+          <label for="precio-prod">Precio del producto</label>
           <input type="text" name="precio-prod" id="precio-prod">
         </div>
 
-      <textarea  id="agregar__textarea"></textarea>
+      <textarea  id="agregar__textarea" placeholder="Descripción del producto"></textarea>
+      <button type="submit" class="banner-textos__btn"> Agregar producto</button>
 
     </div>
-      En esta sección el administrador podrá añadir nuevos productos al e-commerce
-
-      La sección de agregar producto debe contener:
-      
-      - Agregar campo de imagen
-      - Botón para buscar imágenes en la computadora
-      - Campo para el nombre del producto
-      - Campo para precio del producto
-      - Campo para descripción del producto
-      - Botón Agregar producto 
 
       <hr />
       <footer class="footer">
