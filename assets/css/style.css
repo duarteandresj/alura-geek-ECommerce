@@ -116,6 +116,10 @@ body {
   border-radius: 1rem;
   transition: all 0.2s ease-in;
 }
+.banner-textos__btn a{
+  text-decoration: none;
+  color: var(--color-letra);
+}
 .banner-textos__btn:hover {
   cursor: pointer;
   transform: translateY(-3px);
